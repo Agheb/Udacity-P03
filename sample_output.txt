@@ -1,0 +1,23 @@
+Connecting to DB...Done
+Obtaining data from query result...Done
+Obtaining data from query result...Done
+Obtaining data from query result...Done
+Log analysis report is ready
+Press any key to continue ...
+
+Top 3 most viewed articles:
+
+"Candidate is jerk, alleges rival" - 338647 views
+"Bears love berries, alleges bear" - 253801 views
+"Bad things gone, say good people" - 170098 views
+
+Most popular article authors:
+
+Ursula La Multa - 507594 views
+Rudolf von Treppenwitz - 423457 views
+Anonymous Contributor - 170098 views
+Markoff Chaney - 84557 views
+
+Days in which more than 1% of requests led to errors:
+
+July 17, 2016 - 2.26% errors
