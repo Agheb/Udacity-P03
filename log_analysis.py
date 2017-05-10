@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/bin/env python
 """internal reporting CLI"""
 import psycopg2
 import click
