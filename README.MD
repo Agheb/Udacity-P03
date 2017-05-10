@@ -6,20 +6,21 @@ An internal reporting CLI to obtain data from a database and to generate an info
 
 * Install Postgres on your machine
 
-Required dependencies can be installed via pip:
+* Required dependencies can be installed via pip:
 ```bash
 $ pip install -r requirements.txt
 ``` 
-create a Postgres database `news`:
+* Create a Postgres database `news`:
 ```bash
 $ createdb news
 ```
-Finally import the dump file `newsdata.sql` into the database:
+* import dump file `newsdata.sql` into the database:
 ```bash
 $ psql news < newsdata.sql
 ```
 
 # Usage 
-   ```bash
-    $ python log_analysis.py
-   ```
+
+```bash
+$ python log_analysis.py
+```
