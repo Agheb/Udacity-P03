@@ -46,14 +46,16 @@ QUERY3 = ("WITH n_ok AS "
 
 Q_LIST = [QUERY1, QUERY2, QUERY3]
 
+
 def query_db(query, db_conn):
-    """creates a new cursor, executes query and returns a list of query results"""
+    """creates a new cursor, executes query and
+    returns a dict of query results"""
+
     cur = db_conn.cursor()
     cur.execute(query)
     results = cur.fetchall()
     cur.close()
     return results
-
 
 
 def report_output(res_l):
@@ -76,7 +78,8 @@ def report_output(res_l):
 
 
 def runner():
-    """shows status of db operations and prints summary of query results to console"""
+    """shows status of db operations
+    and prints summary of query results to console"""
 
     click.echo("Connecting to DB...", nl=False)
     db_conn = psycopg2.connect("dbname=news user=ubuntu")
@@ -89,10 +92,10 @@ def runner():
         results.append(query_db(query, db_conn))
         click.echo("Done")
 
-        click.echo("Log analysis report is ready")
-        click.pause()
-        click.clear()
-        click.echo(report_output(results))
+    click.echo("Log analysis report is ready")
+    click.pause()
+    click.clear()
+    click.echo(report_output(results))
 
 if __name__ == "__main__":
     runner()
